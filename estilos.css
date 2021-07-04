@@ -1,0 +1,201 @@
+#leadership {
+    background-color: #fffbfc;
+    padding: 100px 0;
+  }
+  #leadership .accordion .card {
+    border: none;
+  }
+  #leadership .accordion .card img {
+    height: 64px;
+    width: 64px;
+  }
+  #leadership .accordion .card .accordion-group .card-header {
+    background-color: #fffbfc;
+    padding: 10px;
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px);
+  }
+  #leadership .accordion .card .accordion-group .card-header:hover {
+    background-color: #595173;
+  }
+  #leadership .accordion .card .accordion-group .card-header a {
+    text-decoration: none;
+    color: #000;
+  }
+  #leadership .accordion .card .accordion-group .card-header a:hover {
+    color: white;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.card-container {
+    width: 1000px;
+    margin: 15px auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 40px;
+}
+
+    .card-container .custom-card {
+        position:relative;
+        background: #000;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: .5s;
+        height:350px;
+
+    }
+
+    .card-container .custom-card:hover {
+        transform: translateY(-20px);
+        box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+
+    }
+        .card-container .custom-card .card-img-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+        }
+
+        .card-container .custom-card:hover .card-img-box {        
+            opacity: 0.5;
+        }
+
+        .card-container .custom-card .card-img-box img {
+            width:350px;
+            height: 100%;
+        }
+
+        .card-container .custom-card .card-content {
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            bottom: -100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: 0.5s;
+            padding-top: 30px;
+        }
+
+        .card-container .custom-card:hover .card-content {
+            bottom:0
+        }
+            
+        .card-container .custom-card:nth-child(1) {
+            background: linear-gradient(0deg, #595173, transparent)
+        }
+        .card-container .custom-card:nth-child(2) {
+            background: linear-gradient(0deg, #595173, transparent)
+        }
+        .card-container .custom-card:nth-child(3) {
+            background: linear-gradient(0deg, #595173, transparent)
+        }
+
+        .card-container .custom-card .card-content h2 {
+            margin: 0 0 10px;
+            padding:0;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .card-container .custom-card .card-content h2 span {        
+            color: rgb(34, 34, 34);
+            font-size: 16px;
+        }
+
+        .card-container .custom-card .card-content p {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-size: 13px;
+        }
+
+        .card-container .custom-card .card-content ul {
+            display: flex;
+            margin: 10px 0 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-container .custom-card .card-content ul  li {
+            list-style: none;
+
+        }
+
+            .card-container .custom-card .card-content ul li a {
+                color: #fff;
+                padding: 0 10px;
+                font-size: 18px;
+                transition: 0.5s;
+            }
+
+            
+.card-header, .card-link,.card-link:hover{background-color:#000;text-align:left;color:#563da8;}
+.card-body{padding:10px 10px;}
+
+span.collapsed,span.expanded{float: right;position:absolute;top:5px;right:20px;font-size:20px;color:white;
+;}
+
+@keyframes minus {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+[aria-expanded="false"] > .expanded, [aria-expanded="true"] > .collapsed  {display:minus; }
+
+/*ESTILOS DE CADA SECTION*/
+
+section{
+    padding: 30px 0;
+}
+
+#observatorio{
+    background: #F2F2F2;
+    text-align: justify;
+}
+
+#atividades{
+    background: #595173;
+}
+
+#astronomo{
+    background: #595173;
+    color: #ffff;
+    text-align: justify;
+}
+#Telescopios{
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+}
+a {
+    color: #563da8;
+}  
+a:visited {
+    text-decoration: underline;
+}
+  
+a:hover {
+    color: #0ad12b;
+}
+  
+a:active {
+    text-decoration: underline;
+}
